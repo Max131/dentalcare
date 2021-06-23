@@ -16,16 +16,18 @@ document.addEventListener('DOMContentLoaded', () => {
 const sr = ScrollReveal({
     distance: '30px',
     duration: 1800,
-    reset: true,
 });
 
-sr.reveal(`.header__col, .service:nth-child(2)`, {
+sr.reveal(`.service:nth-child(2)`, {
     origin: 'top',
     interval: 200,
-})
+});
 sr.reveal(`.service:nth-child(1), .service:nth-child(3)`)
 
+sr.reveal(`.header__col:first-child, .info-element`, {
+    origin: 'left'
+})
 sr.reveal(`.image`, {
     origin: 'right'
-})
-
+});
+sr.reveal(`.testimonials`);
